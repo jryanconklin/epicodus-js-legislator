@@ -8,7 +8,7 @@ export default Ember.Route.extend({
     var url = 'http://congress.api.sunlightfoundation.com/legislators/locate?apikey='+key+'&zip=' + params.zip;
     return Ember.$.getJSON(url).then(function(responseJSON) {
       return responseJSON.results;
-    })
+    });
 
 
   } //End Model

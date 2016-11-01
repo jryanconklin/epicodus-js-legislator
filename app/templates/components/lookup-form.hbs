@@ -1,0 +1,13 @@
+
+<div class="row">
+  <div class="col-sm-4 zip-looker well">
+    <h3>Legislator Lookup</h3>
+    <form>
+      <div class="form-group">
+        <label for="zip"></label>
+        {{input class="form-control" value=zip id="zip" type="number"}}
+      </div>
+      <button class="btn btn-primary" {{action 'zipLookup'}}>Legislate!</button>
+    </form>
+  </div>
+</div>
